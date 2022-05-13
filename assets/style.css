@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/** Global Css Variables **/
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --pink: #fff4e6;
+    --silver: #f6f6f6;
+    --blue: #00d3ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    -webkit-tap-highlight-color: transparent; /* transparent with keyword */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* transparent with rgba */
+    -webkit-tap-highlight-color: hsla(0, 0, 0, 0); /* transparent with hsla */
+    -webkit-tap-highlight-color: #00000000; /* transparent with hex with alpha */
+    -webkit-tap-highlight-color: #0000; /* transparent with short hex with alpha */
+}
+
+body {
+    background-color: #e5e5e5;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* Root */
+#root {
+    background-color: #fff4e6;
+    max-width: 1600px;
+}
+
+/*===== LAYOUT =====*/
+.mk-container {
+    max-width: 960px;
+    border: 2px solid red;
+}
+
+/* Header */
+#header {
+    background-color: #fff4e6;
+}
+
+/* === Screen Size <= 768px === */
+@media screen and (max-width: 768px) {
+}
