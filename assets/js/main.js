@@ -7,10 +7,10 @@ const showMenu = (toggleId, navId) => {
         toggle.addEventListener("click", () => {
             nav.classList.add("show-menu");
 
-            gsap.from(".close-menu", {
+            gsap.from(".close-menu, .nav__item, .nav__button", {
                 opacity: 0,
-                duration: 1,
-                delay: 0.5,
+                duration: 2,
+                delay: 1,
                 y: 25,
                 ease: "expo.out",
                 stagger: 0.2,
@@ -21,12 +21,14 @@ const showMenu = (toggleId, navId) => {
 };
 showMenu("nav-toggle", "nav__menu");
 
+/*===== CLOSE MENU =====*/
 const navMenu = document.querySelector("#nav__menu")
 const closeMenu = document.querySelector(".close-menu")
     .addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 
+/*===== GSAP ANIMATIONS =====*/
 gsap.from(".nav__logo, .nav__toggle", {
     opacity: 0,
     duration: 2,
@@ -51,5 +53,3 @@ gsap.from(".home__data, .home__hero, .technology, .popular-items, .products, .ne
     duration: 2,
     delay: 0.5,
 });
-
-/* More animation Might be added by Me Soon */
