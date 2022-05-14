@@ -8,7 +8,7 @@ This project was created by [Samuel Anthony](https://twitter.com/sam1an).
 
 ## To install
 
-Run `git clone [repo-link]` to grab this project from github
+Run `git clone https://github.com/thellecodes/mask-landing-page.git` to grab this project from github
 
 ### `npm install`
 
