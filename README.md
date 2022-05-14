@@ -18,7 +18,7 @@ To install the neccessary dependencies run the above command
 
 ### `npm start`
 
-## Ingredients
+## Tools
 
 - HTML
 - CSS 3
